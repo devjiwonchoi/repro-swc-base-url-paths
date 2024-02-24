@@ -2,6 +2,15 @@
 
 **SWC Transform is not resolving the `baseUrl` properly.**
 
+## To Reproduce
+
+Run the following command:
+
+```sh
+pnpm i
+pnpm tsx .
+```
+
 SWC `transform` requires the `baseUrl` to be absolute path.
 
 The common case is to use `resolve` to get the absolute path resolving the `cwd` and `baseUrl`.
